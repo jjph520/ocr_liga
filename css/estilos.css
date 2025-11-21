@@ -1,0 +1,180 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #0066cc, #00cc88);
+  color: white;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.brand-title {
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #00f0ff; /* Color base del neón */
+  text-shadow:
+      0 0 5px #00f0ff,
+      0 0 10px #00f0ff,
+      0 0 20px #00f0ff,
+      0 0 40px #00a3ff,
+      0 0 80px #0077ff;
+}
+.hero-section {
+  background: url('../img/portada.png') center center/cover no-repeat;
+  padding: 130px 0;
+  color: white;
+  position: relative;
+  text-shadow: 0 0 12px rgba(0,0,0,0.9);
+}
+
+/* Capa oscura encima para que se lea el texto */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45); /* controla qué tan oscuro queda */
+  backdrop-filter: blur(1.5px); /* estilo fino */
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+/* Fuente general */
+body, h1, h2, h3, p, a {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Título principal */
+.hero-section h1 {
+  font-weight: 800;  /* Extra bold */
+  font-size: 3rem;   /* Más grande */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px rgba(0,0,0,0.9);
+}
+
+/* Texto descriptivo */
+.hero-section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+
+/* Botón */
+.hero-section a.btn {
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
+
+/* Título con efecto NEÓN */
+.hero-section h1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: floralwhite; /* Color del neón */
+  text-shadow:
+    0 0 5px #00eaff,
+    0 0 10px #28828a,
+    0 0 20px #00eaff,
+    0 0 40px #d0dfe2,
+    0 0 80px #11343a;
+}
+.hero-section .lead {
+  font-size: 1.8rem;   /* Aumenta tamaño */
+  font-weight: 600;    /* Negrita moderada */
+  font-style: italic;  /* Curvita */
+  color: #ffffff;      /* (Opcional) blanco si tu fondo es oscuro */
+}
+
+/* Social logos in cards */
+.social-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  background: #fff;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.social-card .card-body {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  min-height: 150px;
+}
+
+.social-card .card-title {
+  margin-top: 10px;
+}
+
+.social-card .card-text {
+  color: #6c757d;
+}
+
+.social-card .btn {
+  margin-top: 10px;
+}
+
+/* Social section sporty look */
+.social-section {
+  background: linear-gradient(180deg, rgba(17,24,39,0.03), rgba(255,255,255,0));
+  padding: 40px 0;
+  border-radius: 12px;
+}
+
+.social-section .card {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  border-radius: 12px;
+}
+
+.social-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.social-logo {
+  transition: transform 200ms ease;
+}
+.social-card:hover .social-logo {
+  transform: scale(1.08);
+}
+
+/* Colored buttons for each network */
+.btn-instagram {
+  background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af); color:#fff; border:none;
+}
+.btn-tiktok {
+  background: #111; color:#fff; border:none;
+}
+.btn-youtube {
+  background:#FF0000; color:#fff; border:none;
+}
+
+.btn-instagram:hover, .btn-tiktok:hover, .btn-youtube:hover {
+  filter: brightness(0.95);
+}
+
+@media (max-width: 576px) {
+  .social-logo { width: 28px; height: 28px; padding:2px; }
+  .social-card .card-body { min-height: 140px; }
+}
+
